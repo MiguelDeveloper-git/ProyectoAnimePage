@@ -1,0 +1,276 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* reset para REMS --> 62.5% = 10px de 16px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* -- Font -- */
+@font-face {
+    font-family: 'Gothic_Gotera';
+    src: url('../font/Gothic_Gotera.otf');
+}
+
+/* -- globales -- */
+
+/* contenedores */
+.contenido-header {
+    padding: 0.5rem 0;
+}
+
+.contenedor-navbar {
+    background: rgb(131,58,180);
+    background: linear-gradient(139deg, rgba(131,58,180,0.69) 0%, rgba(253,29,112,0.69) 25%, rgba(253,92,34,0.8099614845938375) 50%, rgba(253,156,37,0.8071603641456583) 75%, rgba(252,244,69,0.69) 100%);
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.contenedor-seccion {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contenedor-footer {
+    display: flex;
+    flex: 1;
+    background-color: #000000;
+    width: 100%;
+    position: absolute;
+    bottom: -5vh;
+    left: 0;
+}
+
+/* html formato */
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+img {
+    max-width: 100%;
+    max-height: 50%;
+}
+
+/* scroll */
+.scrollbar-estilo::-webkit-scrollbar {
+    width: 10px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: flex;  /* Ocultar scroll */
+}
+
+/* barra scroll */
+.scrollbar-estilo::-webkit-scrollbar-thumb {
+    background: #5c6bc0;
+    border-radius: 4px;
+}
+
+.scrollbar-estilo::-webkit-scrollbar-thumb:hover {
+    background: #3949ab;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.scrollbar-estilo::-webkit-scrollbar-thumb:active {
+    background-color: #283593;
+}
+
+/* pista scroll */
+.scrollbar-estilo::-webkit-scrollbar-track {
+    background: #212121;
+}
+
+.scrollbar-estilo::-webkit-scrollbar-track:hover,
+.scrollbar-estilo::-webkit-scrollbar-track:active {
+  background: #212121;
+}
+
+/* -- utilidades -- */
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.parrafo-estilo {
+    font-family: 'PT Sans Narrow';
+    font-weight: 400;
+}
+
+.h2-estilo {
+    display: flex;
+    margin: 1%;
+}
+
+.tipo-letra-gothic {
+    font-family: 'Gothic_Gotera';
+}
+
+/* botones */
+.btn-primario{
+    background-color: blue;
+}
+.btn-secundario{
+    background-color: green;
+}
+.btn-advertencia{
+    background-color: yellow;
+}
+.btn-peligro{
+    background-color: red;
+}
+
+/* -- header -- */
+
+ /* banner */
+ .banner {
+    background: url('../img/banner-anime01.png');
+    width: 100%;
+    padding: 1.6%;
+}
+
+/* titulo header */
+.h1-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.h1-link:hover {
+    color: coral;
+}
+
+.h1-estilo {
+    font-size: 3.8rem;
+}
+
+@media (min-width: 424px) {
+    
+    .h1-estilo {
+        margin: 2%;
+        font-size: 4.8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .h1-estilo {
+        font-size: 8.7rem;
+    }
+}
+
+/* estilo navbar */
+.navbar-estilo {
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+
+.navbar-estilo a {
+    flex: 1;
+    text-decoration: none;
+    color: blue;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 1.2%;
+}
+
+.link-a-estilo {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+@media (min-width: 424px) {
+
+    .navbar-estilo a {
+        font-size: 2.1rem;
+    }
+}
+
+@media (min-width: 768px) {
+       
+    .navbar-estilo a {
+        font-size: 3.1rem;
+        margin: 0;
+        padding: 1.5%;
+    }
+}
+
+/* -- main -- */
+
+/* secciones */
+.bg-wallpaper {
+    background: url('../img/bg-w01.jpg');
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.sec-anime {
+    padding: 1% 2%;
+    margin: 0;
+    margin-bottom: 2rem;
+    background-color: #efebe9;
+}
+
+.contenedor-img {
+    padding: 1rem;
+    margin-top: 2.5rem;
+}
+
+.parrafo-estilo {
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+        
+    .info {
+        display: flex;
+    }
+    
+    .contenedor-img {
+        display: flex;
+        width: 50%;
+        height: 50%;
+        padding: 0.8rem;
+    }
+
+    .parrafo-estilo {
+        width: 50%;
+        padding: 0.8rem;
+    }
+}
+
+/* footer */
+
+/* separador footer */
+.separador-header-footer {
+    min-height: 100%;
+    position: relative;
+}
+
+.footer-estilo {
+    color: #ffffff;
+}
